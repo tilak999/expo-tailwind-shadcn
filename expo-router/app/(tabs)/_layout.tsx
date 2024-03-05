@@ -15,16 +15,8 @@ function TabBarIcon(props: {
 }
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <Tabs
-      screenOptions={
-        {
-          // tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
-        }
-      }
-    >
+    <Tabs>
       <Tabs.Screen
         name="index"
         options={{
@@ -37,7 +29,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="info-circle"
                     size={25}
-                    className=""
+                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
               </Pressable>

@@ -12,7 +12,7 @@ const App = () => {
       <Text className="font-bold active:scale-150 active:text-[--theme-fg] transition">
         Transitions
       </Text>
-      <Text className="font-bold animate-bounce">Animations</Text>
+      <Text className="font-bold">Animations</Text>
     </View>
   );
 };
